@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeeva J | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Fira Sans',sans-serif;background:#fafafa;color:#333;line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+header{position:fixed;top:0;width:100%;background:#fff;padding:15px 40px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px rgba(0,0,0,0.06);z-index:1000;}
+header .logo{font-family:'Comfortaa',cursive;font-size:1.8em;font-weight:700;color:#2c3e50;}
+header nav a{margin-left:25px;font-weight:500;transition:color 0.3s;}
+header nav a:hover{color:#ff6f61;}
+.hero{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;height:100vh;padding:0 20px;background-color:#fafafa;}
+.profile-photo{width:320px;height:320px;border-radius:50%;object-fit:cover;border:4px solid #ff6f61;margin-bottom:20px;}
+.hero h1{font-family:'Comfortaa',cursive;font-size:3.5em;color:#2c3e50;margin-bottom:10px;}
+.hero p{font-size:1.5em;color:#555;max-width:600px;}
+section{max-width:900px;margin:auto;padding:100px 20px;}
+section h2{font-family:'Comfortaa',cursive;font-size:2.2em;margin-bottom:20px;color:#2c3e50;border-bottom:3px solid #ff6f61;display:inline-block;padding-bottom:5px;}
+.about p{font-size:1.15em;color:#555;}
+.skills{display:flex;flex-wrap:wrap;gap:15px;margin-top:15px;}
+.skills span{background:#ff6f61;color:#fff;padding:10px 18px;border-radius:25px;font-weight:500;font-family:'Fira Sans',sans-serif;font-size:0.95em;transition:transform 0.3s;}
+.skills span:hover{transform:scale(1.1);}
+.project{background:#fff;padding:25px 20px;margin-bottom:25px;border-left:6px solid #ff6f61;transition:transform 0.3s;}
+.project:hover{transform:translateY(-6px);}
+.project h3{color:#ff6f61;margin-bottom:10px;}
+.social-links{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:15px;}
+.social-icon{width:45px;height:45px;transition:transform 0.3s;fill:#ff6f61;}
+.social-icon:hover{transform:scale(1.3);}
+footer{text-align:center;padding:30px 0;color:#555;font-size:0.95em;}
+@media(max-width:768px){header{flex-direction:column;padding:12px 20px;}header nav{margin-top:10px;}.hero h1{font-size:2.8em;}.hero p{font-size:1.2em;}.profile-photo{width:220px;height:220px;}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Jeeva J</div>
+<nav><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+</header>
+<section id="home" class="hero">
+<img src="profile.jpg" alt="Jeeva J" class="profile-photo">
+<h1>Jeeva J</h1>
+<p>Aspiring FinTech Entrepreneur. Passionate about building impactful solutions through technology and innovation. AI, Web Development, Machine Learning, Finance, and Politics are my areas of curiosity.</p>
+</section>
+<section id="about">
+<h2>About Me</h2>
+<p>I'm a first-year student at Scaler School of Technology as well as BITS Pilani. I love exploring technology’s potential to create real-world impact. I am curious about AI, Data Science, Web Development, Machine Learning, Finance, and how tech intersects with society and politics.</p>
+</section>
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills"><span>HTML</span><span>CSS</span><span>Python</span><span>C</span><span>JavaScript</span><span>Java</span></div>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<div class="project">
+<h3>Personal Portfolio Website</h3>
+<p>My maiden project built from scratch to showcase my journey, skills, and interests as I step into the world of technology.</p>
+</div>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:jeevajanardhanan458@gmail.com">jeevajanardhanan458@gmail.com</a></p>
+<div class="social-links">
+<a href="https://www.linkedin.com/in/jeeva-j-12a305372" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
+<a href="https://github.com/JeevaCodes-eng" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" class="social-icon"></a>
+<a href="https://codeforces.com/profile/JeevaCodes" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/codeforces.svg" alt="Codeforces" class="social-icon"></a>
+<a href="https://www.instagram.com/jeeva_janardhanan_18" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" class="social-icon"></a>
+<a href="https://x.com/JeevaJ448821?t=uUY9I5WlGtYJloUX_uSS8A&s=08" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" alt="X" class="social-icon"></a>
+</div>
+</section>
+<footer>&copy; 2025 Jeeva J. All rights reserved.</footer>
+</body>
+</html>
