@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtel Hotstar Plans</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #fff;
+            color: #333;
+        }
+
+        nav {
+            background: #E21B23;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 32px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 24px;
+            transition: color 0.25s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd9d9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: #E21B23;
+            margin-bottom: 35px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 10px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 6px;
+            border-top: 4px solid #E21B23;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 25px 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+        }
+
+        .card.vvip {
+            background: #FFEDED;
+            box-shadow: 0 6px 16px rgba(226, 27, 35, 0.3);
+        }
+
+        .card h2 {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #E21B23;
+            margin: 10px 0 20px;
+            display: inline-block;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: #5f6368;
+        }
+
+        .description {
+            font-size: 0.95rem;
+            color: #5f6368;
+            margin-bottom: 18px;
+            min-height: 32px;
+        }
+
+        .cta-button {
+            display: block;
+            background: #E21B23;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #b0151a;
+        }
+
+        .hover-details {
+            list-style: none;
+            border-top: 1px dashed #E21B23;
+            margin-top: 18px;
+            padding-top: 10px;
+            text-align: left;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.4s ease;
+        }
+
+        .hover-details li {
+            padding: 6px 0;
+            font-size: 0.94rem;
+            color: #333;
+        }
+
+        .card:hover .hover-details {
+            max-height: 240px;
+            opacity: 1;
+        }
+
+        footer {
+            background: #f7f7f7;
+            color: #5f6368;
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 15px 10px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 16px;
+            }
+
+            nav ul {
+                margin-top: 10px;
+            }
+
+            nav ul li a {
+                margin-left: 12px;
+            }
+
+            .container {
+                padding: 40px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#" class="logo">Airtel Hotstar</a>
+        <ul>
+            <li><a href="#">Subscription</a></li>
+            <li><a href="#">Content</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Choose Your Entertainment Plan</h1>
+
+        <div class="pricing-grid">
+
+            <div class="card vip">
+                <h2>VIP</h2>
+                <span class="price">₹499<span>/yr</span></span>
+                <p class="description">Standard streaming for everyday viewing.</p>
+                <a href="#" class="cta-button">Select VIP</a>
+                <ul class="hover-details">
+                    <li> 720p Streaming Quality</li>
+                    <li> Stereo Sound</li>
+                    <li> Access on 2 devices</li>
+                    <li> With Ads</li>
+                </ul>
+            </div>
+
+            <div class="card standard">
+                <h2>VIP Pro</h2>
+                <span class="price">₹999<span>/yr</span></span>
+                <p class="description">High definition viewing with minimal interruptions.</p>
+                <a href="#" class="cta-button">Go Pro</a>
+                <ul class="hover-details">
+                    <li> 1080p HD Streaming</li>
+                    <li> Minimal Ads</li>
+                    <li> Up to 4 devices</li>
+                    <li> Stereo Sound</li>
+                </ul>
+            </div>
+
+            <div class="card vvip">
+                <h2><b><b>VIP Pro Max</b></b></h2>
+                <span class="price">₹1999<span>/yr</span></span>
+                <p class="description">Ultimate cinematic experience with exclusive content.</p>
+                <a href="#" class="cta-button">Get VVIP</a>
+                <ul class="hover-details">
+                    <li> <b><b>4K Streaming Quality</b></b></li>
+                    <li> <b><b>Exclusive Originals</b></b></li>
+                    <li> <b><b>Unlimited Devices</b></b></li>
+                    <li> <b>zero Ads</b></li>
+                    <li> <b><b>Dolby Atmos Surround</b></b></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Airtel Hotstar.
+    </footer>
+
+</body>
+</html>
